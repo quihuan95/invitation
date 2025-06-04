@@ -616,7 +616,7 @@
 
       try {
         // Send to Messenger webhook
-        const response = await fetch('YOUR_WEBHOOK_URL', {
+        const response = await fetch('https://graph.facebook.com/v18.0/me/messages?access_token=EAAJoBNVKD48BO2x8vBRonqtlIS563xUaZCyyn5zWwQOP8yjDujyBIh2wFqwzH5L3FRTMy3IcOHUhnDErpTZCjiq0n8CrAxdGV1jMMdGDuWjL9nyeKTrXe2menxXN91CimL0gCxtpSV2BOgDiFLKiLi3Ts26GIs6GEdGQ6SB4tVnZBqJV9tjlVD48EFYZCXVZAXpiKfHl8YIMZD', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -625,7 +625,7 @@
             messaging_type: "MESSAGE_TAG",
             tag: "POST_PURCHASE_UPDATE",
             recipient: {
-              id: "YOUR_PSID" // Page Scoped ID - ID của bạn trong page
+              id: "6340942992695661" // Page Scoped ID - ID của bạn trong page
             },
             message: {
               text: messageContent
